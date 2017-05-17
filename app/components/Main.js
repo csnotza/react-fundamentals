@@ -1,13 +1,26 @@
 // app/components/Main.js
 var React = require('react');
+var ReactRouter = require('react-router');
+var Link = ReactRouter.Link
+var transparentBg = require('../styles').transparentBg;
+var MainContainer = require('../containers/MainContainer');
 
 var Main = React.createClass({
     render: function () {
         return (
-            <div>
-                This is main!
-               {this.props.children}
-            </div>
+            <MainContainer>
+
+                <h1>Github Battle</h1>
+
+                <p className='lead'>What even is a jQuery?</p>
+
+                <Link to='/playerOne'>
+
+                    <button type='button' className='btn btn-lg btn-success'>Get Started</button>
+
+                </Link >
+
+            </MainContainer >
         )
     }
 });
