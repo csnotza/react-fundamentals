@@ -10,7 +10,7 @@ import { Link } from 'react-router'
 import { transparentBg } from '../styles'
 import MainContainer from '../containers/MainContainer'
 
-var Main = React.createClass({
+const Main = React.createClass({
     render: function () {
         return (
             <div>

@@ -6,7 +6,7 @@ import githubHelpers from '../utils/githubHelpers'
 // var ConfirmBattle = require('../components/ConfirmBattle');
 // var githubHelpers = require('../utils/githubHelpers');
 
-var ConfirmBattleContainer = React.createClass({
+const ConfirmBattleContainer = React.createClass({
     contextTypes: {
         router: React.PropTypes.object.isRequired
     },
@@ -18,7 +18,7 @@ var ConfirmBattleContainer = React.createClass({
     },
     componentDidMount: function () {
         // console.log(this.props);
-        var query = this.props.location.query;
+        const { query } = this.props.location;
         githubHelpers.getPlayersInfo([query.playerOne, query.playerTwo])
             .then(function (players) {
                 this.setState({

@@ -2,9 +2,9 @@
 // var axios = require('axios');
 import axios from 'axios'
 
-var id = "fe3959b93bdd94dbcc17";
-var sec = "dc5608cb97a63f2b0e8f0d38f2b337324e323574";
-var param = "?client_id=" + id + "&client_secret=" + sec;
+const id = "fe3959b93bdd94dbcc17";
+const sec = "dc5608cb97a63f2b0e8f0d38f2b337324e323574";
+const param = "?client_id=" + id + "&client_secret=" + sec;
 
 function getUserInfo(username) {
     return axios.get('https://api.github.com/users/' + username + param);
@@ -58,7 +58,7 @@ function calculateScores(players) {
 
 }
 
-var helpers = {
+const helpers = {
 
     getPlayersInfo: function (players) {
 
@@ -84,9 +84,9 @@ var helpers = {
 
     battle: function (players) {
 
-        var playerOneData = getPlayersData(players[0]);
+        const playerOneData = getPlayersData(players[0]);
 
-        var playerTwoData = getPlayersData(players[1]);
+        const playerTwoData = getPlayersData(players[1]);
 
         return axios.all([playerOneData, playerTwoData])
 
