@@ -1,7 +1,10 @@
 // app/containers/PromptContainer.js
-var React = require('react');
-var styles = require('../styles');
-var Prompt = require('../components/Prompt');
+// var React = require('react');
+// var styles = require('../styles');
+// var Prompt = require('../components/Prompt');
+import React from 'react'
+import styles from '../styles'
+import Prompt from '../components/Prompt'
 
 var PromptContainer = React.createClass({
     contextTypes: {
@@ -47,4 +50,5 @@ var PromptContainer = React.createClass({
     }
 });
 
-module.exports = PromptContainer;
+// module.exports = PromptContainer;
+export default PromptContainer

@@ -1,6 +1,8 @@
 // app/containers/MainContainers.js
-var React = require('react');
-var styles = require('../styles');
+import React from 'react'
+import styles from '../styles'
+// var React = require('react');
+// var styles = require('../styles');
 
 function MainContainer(props) {
     return (
@@ -10,4 +12,5 @@ function MainContainer(props) {
     )
 }
 
-module.exports = MainContainer;
+// module.exports = MainContainer;
+export default MainContainer

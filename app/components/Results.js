@@ -1,14 +1,20 @@
 // app/components/Results.js
-
-var React = require('react');
-var PropTypes = React.PropTypes;
-var styles = require('../styles');
-var ReactRouter = require('react-router');
-var Link = ReactRouter.Link;
-var UserDetails = require('./UserDetails');
-var UserDetailsWrapper = require('./UserDetailsWrapper');
-var MainContainer = require('../containers/MainContainer');
-var Loading = require('./Loading');
+import React, { PropTypes } from 'react'
+import styles from '../styles'
+import { Link } from 'react-router'
+import UserDetails from './UserDetails'
+import UserDetailsWrapper from './UserDetailsWrapper'
+import MainContainer from '../containers/MainContainer'
+import Loading from './Loading'
+// var React = require('react');
+// var PropTypes = React.PropTypes;
+// var styles = require('../styles');
+// var ReactRouter = require('react-router');
+// var Link = ReactRouter.Link;
+// var UserDetails = require('./UserDetails');
+// var UserDetailsWrapper = require('./UserDetailsWrapper');
+// var MainContainer = require('../containers/MainContainer');
+// var Loading = require('./Loading');
 
 
 function StartOver() {
@@ -66,4 +72,5 @@ Results.propTypes = {
 }
 
 
-module.exports = Results
+// module.exports = Results
+export default Results
